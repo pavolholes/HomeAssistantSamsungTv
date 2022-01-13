@@ -1,5 +1,5 @@
 - id: '1638823120932'
-  alias: Obyvacka TV ovladanie z HomeKit
+  alias: Living Room TV remote from HomeKit
   description: ''
   trigger:
   - platform: event
@@ -44,36 +44,36 @@
       - condition: trigger
         id: arrow_right
       sequence:
-      - service: script.obyvacka_tv_key_right
+      - service: script.livingroom_tv_key_right
     - conditions:
       - condition: trigger
         id: arrow_left
       sequence:
-      - service: script.obyvacka_tv_key_left
+      - service: script.livingroom_tv_key_left
     - conditions:
       - condition: trigger
         id: arrow_up
       sequence:
-      - service: script.obyvacka_tv_key_up
+      - service: script.livingroom_tv_key_up
     - conditions:
       - condition: trigger
         id: arrow_down
       sequence:
-      - service: script.obyvacka_tv_key_down
+      - service: script.livingroom_tv_key_down
     - conditions:
       - condition: trigger
         id: select
       sequence:
-      - service: script.obyvacka_tv_key_enter
+      - service: script.livingroom_tv_key_enter
     - conditions:
       - condition: trigger
         id: back
       sequence:
-      - service: script.obyvacka_tv_key_return
+      - service: script.livingroom_tv_key_return
     - conditions:
       - condition: trigger
         id: information
       sequence:
-      - service: script.obyvacka_tv_info
+      - service: script.livingroom_tv_info
     default: []
   mode: single
