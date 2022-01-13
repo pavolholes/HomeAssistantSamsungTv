@@ -31,3 +31,6 @@ In the files you can find the relevant parts of the configuration:
 
     ![image](https://user-images.githubusercontent.com/35877348/149412368-665c543c-d139-4334-91fd-2b12ad580147.png)
 
+Credits:
+Jiří Dostalík is author of scripts.yaml and lovelace-card-full.yaml
+Pavol Holeš is author of the rest
