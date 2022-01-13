@@ -10,3 +10,5 @@ In the files you can find the relevant parts of the configuration:
   - multiple scripts, each for one "remote" button press / TV function
 - automations.yaml
   - one automation which listens to events from HomeKit and call the appropriate scripts to do the actions on the TV. You can use the Remote Widget in the Control Center from your iOS device to quickly control the TV
+- lovelace-card-full.yaml
+  - this is one grid card with all scripts in use  
