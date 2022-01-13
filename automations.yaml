@@ -1,0 +1,79 @@
+- id: '1638823120932'
+  alias: Obyvacka TV ovladanie z HomeKit
+  description: ''
+  trigger:
+  - platform: event
+    event_type: homekit_tv_remote_key_pressed
+    id: arrow_right
+    event_data:
+      key_name: arrow_right
+  - platform: event
+    event_type: homekit_tv_remote_key_pressed
+    id: arrow_left
+    event_data:
+      key_name: arrow_left
+  - platform: event
+    event_type: homekit_tv_remote_key_pressed
+    id: arrow_up
+    event_data:
+      key_name: arrow_up
+  - platform: event
+    event_type: homekit_tv_remote_key_pressed
+    id: arrow_down
+    event_data:
+      key_name: arrow_down
+  - platform: event
+    event_type: homekit_tv_remote_key_pressed
+    id: select
+    event_data:
+      key_name: select
+  - platform: event
+    event_type: homekit_tv_remote_key_pressed
+    id: back
+    event_data:
+      key_name: back
+  - platform: event
+    event_type: homekit_tv_remote_key_pressed
+    id: information
+    event_data:
+      key_name: information
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: arrow_right
+      sequence:
+      - service: script.obyvacka_tv_key_right
+    - conditions:
+      - condition: trigger
+        id: arrow_left
+      sequence:
+      - service: script.obyvacka_tv_key_left
+    - conditions:
+      - condition: trigger
+        id: arrow_up
+      sequence:
+      - service: script.obyvacka_tv_key_up
+    - conditions:
+      - condition: trigger
+        id: arrow_down
+      sequence:
+      - service: script.obyvacka_tv_key_down
+    - conditions:
+      - condition: trigger
+        id: select
+      sequence:
+      - service: script.obyvacka_tv_key_enter
+    - conditions:
+      - condition: trigger
+        id: back
+      sequence:
+      - service: script.obyvacka_tv_key_return
+    - conditions:
+      - condition: trigger
+        id: information
+      sequence:
+      - service: script.obyvacka_tv_info
+    default: []
+  mode: single
