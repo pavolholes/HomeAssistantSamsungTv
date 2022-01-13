@@ -20,6 +20,14 @@ In the files you can find the relevant parts of the configuration:
     ![image](https://user-images.githubusercontent.com/35877348/149412057-8a2d817a-b34f-4191-be39-22ff5ed60e7e.png)
 - lovelace-popup.yaml
   - I use this code for the Livingroom TV entity popup which I've set in the Dwain's Dashboard
+  - It's using stack-in-card from HACS to view mutltiple cards withotu borders between them: https://github.com/custom-cards/stack-in-card
+  - It's using mini-media-player card from HACS to get different media controls which are not available in default one: https://github.com/kalkih/mini-media-player
+  - It's using lovelace-card-mod to change css of the cards: https://github.com/thomasloven/lovelace-card-mod
+  - The first card is mini-media-player which is used for 'source' selections and power control (visible when TV is on/off). This is using the media_player entity for the Samsung TV.
+  - The second card is default media-control card for Plex media player app from the TV which allows to Browse the media and select movie/series/etc.
+  - The third card is mini-media-player visible only when Plex media player app is playing anything - it shows the title and thumbnail.
+  - The fourth card is the horizontal-stack for the media controls
+  - The fifth card is the grid card for the general TV controls
 
     ![image](https://user-images.githubusercontent.com/35877348/149412368-665c543c-d139-4334-91fd-2b12ad580147.png)
 
