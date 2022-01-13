@@ -1,0 +1,254 @@
+#https://home-assistant.io/components/script/
+
+# in this file replace following: entity_id: media_player.tv_livingroom with your entity_id of your TV
+# then you can use the scripts names (i.e. script.livingroom_tv_play) to call them to do the action
+
+####################################################
+#                                                  #
+#                      SCRIPT                      #
+#                                                  #
+####################################################
+
+####################################################
+#                  LIVING ROOM TV                  #
+####################################################
+livingroom_tv_play:
+  alias: Play
+  icon: mdi:play
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_PLAY
+livingroom_tv_channel_down:
+  alias: Channel down
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_CHDOWN
+livingroom_tv_key_1:
+  alias: Key1
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_1
+livingroom_tv_key_2:
+  alias: Key2
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_2
+livingroom_tv_key_3:
+  alias: Key3
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_3
+livingroom_tv_key_4:
+  alias: Key4
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_4
+livingroom_tv_key_5:
+  alias: Key5
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_5
+livingroom_tv_key_6:
+  alias: Key6
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_6
+livingroom_tv_key_7:
+  alias: Key7
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_7
+livingroom_tv_key_8:
+  alias: Key8
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_8
+livingroom_tv_key_9:
+  alias: Key9
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_9
+livingroom_tv_key_0:
+  alias: Key0
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_0
+livingroom_tv_key_up:
+  alias: NavigationUp
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_UP
+livingroom_tv_key_down:
+  alias: NavigationDown
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_DOWN
+livingroom_tv_key_left:
+  alias: NavigationLeft
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_LEFT
+livingroom_tv_key_right:
+  alias: NavigationRight
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_RIGHT
+livingroom_tv_key_return:
+  alias: NavigationReturn/Back
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_RETURN
+livingroom_tv_key_enter:
+  alias: NavigationEnter
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_ENTER
+livingroom_tv_rewind:
+  alias: rewind
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_REWIND
+livingroom_tv_fastforward:
+  alias: fastforward
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_FF
+livingroom_tv_stop:
+  alias: stop
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_STOP
+livingroom_tv_pause:
+  alias: pause
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_PAUSE
+livingroom_tv_sleeptimer:
+  alias: sleeptimer
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_SLEEP
+livingroom_tv_tools:
+  alias: tools
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_TOOLS
+livingroom_tv_info:
+  alias: info
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_INFO
+livingroom_tv_mute:
+  alias: mute
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_MUTE
+livingroom_tv_channellist:
+  alias: channellist
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_CH_LIST
+livingroom_tv_guide:
+  alias: guide
+  sequence:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.tv_livingroom
+      media_content_type: send_key
+      media_content_id: KEY_GUIDE
+livingroom_tv_demo_google_tts:
+  alias: demo google tts
+  sequence:
+  - service: tts.google_say
+    data:
+      entity_id: media_player.tv_livingroom
+      message: test test
+      language: en
+  mode: single
+
+####################################################
+#                                                  #
+#            END OF CONFIGURATION FILE             #
+#                                                  #
+####################################################
