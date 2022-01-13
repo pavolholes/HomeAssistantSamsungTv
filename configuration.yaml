@@ -1,0 +1,9 @@
+####################################################
+#                                                  #
+#      LINKS TO INDIVUAL CONFIGURATION FILES       #
+#                                                  #
+####################################################
+
+# https://home-assistant.io/docs/configuration/splitting_configuration/
+automation: !include automations.yaml
+script: !include scripts.yaml
