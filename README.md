@@ -1,4 +1,4 @@
-# HomeAssistantSamsungTv
+# Home Assistant Samsung TV scripts, automation for HomeKit Remote Widget and Lovelace cards
 Samsung TV scripts, automations, lovelace
 
 I'm using HomeAssistant - SamsungTV Smart Component from HACS: https://github.com/ollo69/ha-samsungtv-smart
