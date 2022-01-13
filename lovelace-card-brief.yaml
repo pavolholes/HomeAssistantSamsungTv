@@ -1,0 +1,87 @@
+type: grid
+square: false
+cards:
+  - type: button
+    tap_action:
+      action: call-service
+      service: script.livingroom_tv_mute
+      service_data: {}
+      target: {}
+    entity: media_player.tv_livingroom
+    show_name: false
+    icon: mdi:volume-off
+  - type: button
+    tap_action:
+      action: call-service
+      service: script.livingroom_tv_key_up
+      service_data: {}
+      target: {}
+    entity: media_player.tv_livingroom
+    show_name: false
+    icon: mdi:arrow-up-thick
+    show_icon: true
+  - type: button
+    tap_action:
+      action: call-service
+      service: media_player.volume_up
+      service_data: {}
+      target:
+        entity_id: media_player.tv_livingroom
+    entity: media_player.tv_livingroom
+    show_name: false
+    icon: mdi:volume-plus
+  - type: button
+    tap_action:
+      action: call-service
+      service: script.livingroom_tv_key_left
+      service_data: {}
+      target: {}
+    entity: media_player.tv_livingroom
+    icon: mdi:arrow-left-thick
+    show_name: false
+  - type: button
+    tap_action:
+      action: call-service
+      service: script.livingroom_tv_key_enter
+      service_data: {}
+      target: {}
+    entity: media_player.tv_livingroom
+    show_name: false
+    icon: mdi:location-enter
+  - type: button
+    tap_action:
+      action: call-service
+      service: script.livingroom_tv_key_right
+      service_data: {}
+      target: {}
+    entity: media_player.tv_livingroom
+    show_name: false
+    icon: mdi:arrow-right-thick
+  - type: button
+    tap_action:
+      action: call-service
+      service: script.livingroom_tv_key_return
+      service_data: {}
+      target: {}
+    entity: media_player.tv_livingroom
+    icon: mdi:keyboard-return
+    show_name: false
+  - type: button
+    tap_action:
+      action: call-service
+      service: script.livingroom_tv_key_down
+      service_data: {}
+      target: {}
+    entity: media_player.tv_livingroom
+    show_name: false
+    icon: mdi:arrow-down-thick
+  - type: button
+    tap_action:
+      action: call-service
+      service: media_player.volume_down
+      service_data: {}
+      target:
+        entity_id: media_player.tv_livingroom
+    entity: media_player.tv_livingroom
+    show_name: false
+    icon: mdi:volume-minus
