@@ -1,0 +1,288 @@
+# you can paste the code below to new grid card when you switch to Show Code Editor
+# before pasting use some text editor to replace the entity: and entity_id: for your entity_id
+type: grid
+square: false
+columns: 3
+cards:
+  - type: grid
+    cards:
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_1
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:numeric-1
+        show_name: false
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_2
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:numeric-2
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_3
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:numeric-3
+        show_name: false
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_4
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:numeric-4
+        show_name: false
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_5
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:numeric-5
+        show_name: false
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_6
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:numeric-6
+        show_name: false
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_7
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:numeric-7
+        show_name: false
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_8
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:numeric-8
+        show_name: false
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_9
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:numeric-9
+        show_name: false
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_guide
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:television-guide
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_0
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:numeric-0
+        show_name: false
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_sleeptimer
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:timer
+        show_name: false
+  - type: grid
+    cards:
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_tools
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:hammer-screwdriver
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_up
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:arrow-up-thick
+        show_icon: true
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_info
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:information-variant
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_left
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:arrow-left-thick
+        show_name: false
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_enter
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:location-enter
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_right
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:arrow-right-thick
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_return
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:keyboard-return
+        show_name: false
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_down
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:arrow-down-thick
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_channellist
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:format-list-bulleted
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_mute
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:volume-off
+      - type: button
+        tap_action:
+          action: call-service
+          service: media_player.volume_down
+          service_data: {}
+          target:
+            entity_id: media_player.tv_livingroom
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:volume-minus
+      - type: button
+        tap_action:
+          action: call-service
+          service: media_player.volume_up
+          service_data: {}
+          target:
+            entity_id: media_player.tv_livingroom
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:volume-plus
+  - type: grid
+    square: false
+    columns: 1
+    cards:
+      - type: grid
+        columns: 3
+        cards:
+          - type: button
+            tap_action:
+              action: call-service
+              service: script.livingroom_tv_play
+              service_data: {}
+              target: {}
+            entity: media_player.tv_livingroom
+            icon: mdi:play
+            show_name: false
+            icon_height: 57px
+            show_icon: true
+            show_state: false
+          - type: button
+            tap_action:
+              action: call-service
+              service: script.livingroom_tv_pause
+              service_data: {}
+              target: {}
+            entity: media_player.tv_livingroom
+            show_name: false
+            icon: mdi:pause
+          - type: button
+            tap_action:
+              action: call-service
+              service: script.livingroom_tv_stop
+              service_data: {}
+              target: {}
+            entity: media_player.tv_livingroom
+            show_name: false
+            icon: mdi:stop
+      - type: grid
+        columns: 2
+        cards:
+          - type: button
+            tap_action:
+              action: call-service
+              service: script.livingroom_tv_rewind
+              service_data: {}
+              target: {}
+            show_name: false
+            entity: media_player.tv_livingroom
+            icon_height: '-29px'
+            icon: mdi:rewind
+          - type: button
+            tap_action:
+              action: call-service
+              service: script.livingroom_tv_fastforward
+              service_data: {}
+              target: {}
+            entity: media_player.tv_livingroom
+            show_name: false
+            icon: mdi:fast-forward
