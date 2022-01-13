@@ -1,0 +1,305 @@
+# dwains_dashboard
+type: custom:stack-in-card
+cards:
+  - type: custom:mini-media-player
+    entity: media_player.tv_livingroom
+    name: Living Room TV
+    scale: '1.4'
+    hide:
+      name: false
+      shuffle: tru
+      info: true
+      icon: true
+      icon_state: false
+      progress: true
+      source: false
+      volume: true
+      sound_mode: false
+      controls: true
+      runtime: false
+      power: false
+      mute: true
+    artwork: none
+    volume_stateless: true
+    source: full
+    info: scroll
+    group: false
+    volume_step: '5'
+    card_mod:
+      style: |
+        div.mmp__bg {
+          /*opacity: 1;*/
+          transition: none !important;
+        }
+        div.cover {
+          transition: none !important;
+        }
+        div.cover-gradient {
+          transition: none !important;
+        }
+        div.mmp-player {
+          transition: none !important;
+        }
+  - type: media-control
+    entity: media_player.plex_plex_for_samsung_tv_2019
+    title: Plex
+    name: Plex
+    card_mod:
+      style: |
+        div.player.no-image.no-progress {
+          display: flex;
+        }
+        div.top-info {
+          display: flex;
+        }
+        div.media-info {
+          display: none;
+        }
+        div.background {
+          display: true;
+          opacity: 1;
+          transition: none;
+        }
+        div.no-img {
+          display: none;
+          /*opacity: 1;*/
+          transition: none;
+        }
+        div.image {
+          display: none;
+          opacity: 0.7;
+          transition: none;
+        }
+        div.color-gradient {
+          display: none;
+          /*opacity: 0.7;*/
+          transition: none;
+        }
+        div.color-block {
+          display: true;
+          /*opacity: 0.7;*/
+          /*background-color: black !important;*/
+          transition: none;
+        }
+        div.background.off {
+          display: none;
+        }
+        div.background.no-image {
+          display: none
+        }
+        ha-icon-button:not(.browse-media) {
+          display: none;
+        }
+        ha-card {
+          width: 100%;  /*force a value of > 300px to keep the controls if needed*/
+        }
+        ha-icon-button {
+          padding: 0 0 25px 0
+        }
+        mwc-icon-button {
+          margin-bottom: 4px;
+          margin-right: 16px;
+          display: true;
+          position: absolute !important;
+          right: 15px ;
+          --mdc-icon-size: 45px !important;
+        }
+        div.title-controls {
+          padding: 0 0 3px;
+        }
+        .no-progress.player {
+          padding-bottom: 0px !important;
+        }
+        div.player {
+          /*color: inherit !important;*/
+          padding-top: 0px;
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+        }
+        div.off {
+          display: true;
+        }
+        mwc-linear-progress{
+          display:none;
+        }
+  - type: custom:mini-media-player
+    entity: media_player.plex_plex_for_samsung_tv_2019
+    name: Obývačka TV
+    scale: '1.4'
+    hide:
+      name: true
+      shuffle: true
+      icon: true
+      icon_state: false
+      progress: true
+      source: false
+      volume: true
+      sound_mode: false
+      controls: true
+      runtime: false
+      power: true
+      mute: true
+    artwork: material
+    volume_stateless: true
+    source: full
+    info: scroll
+    group: false
+    volume_step: '5'
+    card_mod:
+      style: |
+        div.mmp__bg {
+          /*opacity: 1;*/
+          transition: none !important;
+        }
+        div.cover {
+          transition: none !important;
+        }
+        div.cover-gradient {
+          transition: none !important;
+        }
+        div.mmp-player {
+          transition: none !important;
+        }
+        div.mini-media-player-background-opacity {
+          opacity: 0;
+        }
+  - type: horizontal-stack
+    cards:
+      - type: grid
+        square: false
+        columns: 5
+        cards:
+          - type: button
+            tap_action:
+              action: call-service
+              service: script.livingroom_tv_rewind
+              service_data: {}
+              target: {}
+            show_name: false
+            entity: media_player.tv_livingroom
+            icon: mdi:rewind
+          - type: button
+            tap_action:
+              action: call-service
+              service: script.livingroom_tv_play
+              service_data: {}
+              target: {}
+            entity: media_player.tv_livingroom
+            icon: mdi:play
+            show_name: false
+            show_icon: true
+            show_state: false
+          - type: button
+            tap_action:
+              action: call-service
+              service: script.livingroom_tv_pause
+              service_data: {}
+              target: {}
+            entity: media_player.tv_livingroom
+            show_name: false
+            icon: mdi:pause
+          - type: button
+            tap_action:
+              action: call-service
+              service: script.livingroom_tv_stop
+              service_data: {}
+              target: {}
+            entity: media_player.tv_livingroom
+            show_name: false
+            icon: mdi:stop
+          - type: button
+            tap_action:
+              action: call-service
+              service: script.livingroom_tv_fastforward
+              service_data: {}
+              target: {}
+            entity: media_player.tv_livingroom
+            show_name: false
+            icon: mdi:fast-forward
+  - type: grid
+    square: false
+    cards:
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_mute
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:volume-off
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_up
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:arrow-up-thick
+        show_icon: true
+      - type: button
+        tap_action:
+          action: call-service
+          service: media_player.volume_up
+          service_data: {}
+          target:
+            entity_id: media_player.tv_livingroom
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:volume-plus
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_left
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:arrow-left-thick
+        show_name: false
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_enter
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:location-enter
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_right
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:arrow-right-thick
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_return
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        icon: mdi:keyboard-return
+        show_name: false
+      - type: button
+        tap_action:
+          action: call-service
+          service: script.livingroom_tv_key_down
+          service_data: {}
+          target: {}
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:arrow-down-thick
+      - type: button
+        tap_action:
+          action: call-service
+          service: media_player.volume_down
+          service_data: {}
+          target:
+            entity_id: media_player.tv_livingroom
+        entity: media_player.tv_livingroom
+        show_name: false
+        icon: mdi:volume-minus
